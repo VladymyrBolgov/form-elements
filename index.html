@@ -63,14 +63,16 @@
 <br>
 		<label for="">Оставте комментарий</label>
   		<textarea name="comment" id="comment" cols="" rows="10"></textarea>
-
+<br>
+		<input type="checkbox" name="policy" id="policy">
+		<label for="policy">Соглашаюсь на все, за еду</label>
 
 <br>
 		<button type="submit">Оставить заявку</button>
 	
 	</form>
 
-	
+
 	<script>
 		(() => {
 			document
@@ -81,7 +83,7 @@
 				new FormData(e.currentTarget).forEach((value, name) =>
 					console.log(`${name}: ${value}`),
 				 );
-				 e.currentTarget();
+				 e.currentTarget.reset();
 			});
 		})();
 	</script>
