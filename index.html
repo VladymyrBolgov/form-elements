@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-		rel="stylesheet" />
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Элементы формы</title>
-	<link rel="stylesheet" type="text/css" href="./css/styles.css" />
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Элементы формы</title>
+		<link 
+		   href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+		   rel="stylesheet">
+		<link  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/style.css">
+	 </head>
 
 <body>
-	<form class="js-speaker-form">
-		<label for="name">Имя</label>
-		<input type="text" name="name" id="name">
-<br>
-		<label for="tel">Телефон</label>
-		<input type="tel" name="tel" id="tel">
-<br>
-		<label for="meil">Почта</label>
-		<input type="email" name="meil" id="meil">
+	<form class="form js-speaker-form">
+		
+		<div class="form-field">
+			<label for="name">Имя</label>
+			<input type="text" name="name" id="name" placeholder="Иван Иванович">
+		</div>
+		<div class="form-field">
+			<label for="tel">Телефон</label>
+			<input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00">
+		</div>
+		<div class="form-field">
+			<label for="meil">Почта</label>
+			<input type="email" name="meil" id="meil" placeholder="my@mail.com">
+		</div>	
 <br>
 		<div role="group">
 			<input type="checkbox" name="topic" value="html" id="html">
@@ -62,7 +63,7 @@
 		<input type="file" name="pdf" id="pdf">
 <br>
 		<label for="">Оставте комментарий</label>
-  		<textarea name="comment" id="comment" cols="" rows="10"></textarea>
+  		<textarea name="comment" id="comment" cols="" rows="10" placeholder="Уточните детали доклада"></textarea>
 <br>
 		<input type="checkbox" name="policy" id="policy">
 		<label for="policy">Соглашаюсь на все, за еду</label>
